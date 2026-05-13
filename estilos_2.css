@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+}
+
+
+.contenedor {
+    width: 100%;
+}
+
+section {
+    padding: 80px 20px;
+}
+
+
+.hero {
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("imagenes/gym-interior-background-of-dumbbells-on-rack-in-fitness-and-workout-room-photo.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-contenido {
+    margin-left: 10%;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 60px;
+    text-shadow: 3px 3px 10px black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero h2 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.sobre-mi .contenido {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sobre-mi img {
+    width: 280px;
+    border-radius: 15px;
+}
+
+.sobre-mi div {
+    color: white;
+    max-width: 500px;
+}
+
+.sobre-mi h1 {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+.portfolio {
+    text-align: center;
+    color: white;
+    background: #0f172a;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin: auto;
+
+}
+
+.card { /* Esto seria el estilo de portfolio*/
+    background:#27496d ;
+    padding: 25px;
+    border-radius: 15px;
+    width: 230px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+
+
+.card::before {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #38bdf8;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    border-radius: 10px;
+}
+
+
+
+.card p {
+    color: #dbeafe;
+    line-height: 22px;
+    text-align: center;
+}
+
+.card .btn {
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.experiencia {
+    text-align: center;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1 fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.grid div {
+    background: #1e293b;
+    padding: 35px;
+    border-radius: 15px;
+    border-left: 5px solid #38bdf8;
+}
+
+
+
+.contacto {
+    background: white;
+    text-align: center;
+}
+
+.contacto h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #f1f5f9;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    padding: 12px;
+    background: #0ea5e9;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+button:hover {
+    background: #0284c7;
+}
+
+section {
+    border-bottom: 4px solid rgba(255,255,255,0.08);
+    
+}
